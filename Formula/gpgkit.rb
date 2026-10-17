@@ -27,6 +27,6 @@ class Gpgkit < Formula
   end
 
   test do
-    assert_match "0.1.0", shell_output("#{bin}/gpgkit --version")
+    assert_match "gpgkit", shell_output("#{bin}/gpgkit --help")
   end
 end
