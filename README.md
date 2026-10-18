@@ -8,6 +8,7 @@ Official Homebrew Tap for CLI developer tools maintained by [@lihuu](https://git
 | :--- | :--- | :--- |
 | **`gpgkit`** | One command for the whole life of a GPG key | [Documentation](https://lihuu.github.io/li-tools/gpgkit) |
 | **`certkit`** | Zero-dependency CLI for enterprise PKI and certificate management | [Documentation](https://lihuu.github.io/li-tools/certkit) |
+| **`tokenkit`** | Encrypted universal token manager with embedded SQLite and sub-10ms shell injection | [Documentation](https://lihuu.github.io/li-tools/tokenkit) |
 
 ## Quick Start
 
@@ -32,8 +33,15 @@ brew install certkit
 brew install lihuu/tap/certkit
 ```
 
+#### Install tokenkit
+```bash
+brew install tokenkit
+# or without tapping first:
+brew install lihuu/tap/tokenkit
+```
+
 ### 3. Update Tools
 ```bash
 brew update
-brew upgrade gpgkit certkit
+brew upgrade gpgkit certkit tokenkit
 ```
