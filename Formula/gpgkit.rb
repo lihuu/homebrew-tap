@@ -1,13 +1,13 @@
 class Gpgkit < Formula
   desc "One command for the whole life of a GPG key"
   homepage "https://lihuu.github.io/li-tools/gpgkit"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lihuu/li-tools/releases/download/v0.4.0/gpgkit-darwin-arm64.tar.gz"
-      sha256 "b56110cfa559f50fcbbf0d0b3e9ad21de1a30a5a13fe4a59321eabcef5e74076"
+      url "https://github.com/lihuu/li-tools/releases/download/v0.5.0/gpgkit-darwin-arm64.tar.gz"
+      sha256 "f3d53c744e54332693a20902f2cb5367ba64564b1bb52f6657d33c485cf3d33c"
 
       def install
         bin.install "gpgkit"
@@ -17,8 +17,8 @@ class Gpgkit < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lihuu/li-tools/releases/download/v0.4.0/gpgkit-linux-amd64.tar.gz"
-      sha256 "705f3d878d9725df85cfcb8058db8d96d9c432e1d023aaf326f031234d667813"
+      url "https://github.com/lihuu/li-tools/releases/download/v0.5.0/gpgkit-linux-amd64.tar.gz"
+      sha256 "d51139e96b22db98e1102f8456245ca75a5bef8b081dbb19b0897c87cb69bd30"
 
       def install
         bin.install "gpgkit"

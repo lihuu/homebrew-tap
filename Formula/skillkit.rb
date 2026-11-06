@@ -1,13 +1,13 @@
 class Skillkit < Formula
   desc "Personal skills repository manager and parallel distribution CLI for AI agents"
   homepage "https://tools.lihu.me/skillkit"
-  version "0.4.0"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lihuu/li-tools/releases/download/v0.4.0/skillkit-darwin-arm64.tar.gz"
-      sha256 "c56ba695f49fef6b8d66c692f497e91ea3911e7dd23daded28c57a4178c4b05b"
+      url "https://github.com/lihuu/li-tools/releases/download/v0.5.0/skillkit-darwin-arm64.tar.gz"
+      sha256 "6208b9dfdbf0877d7b392f331fa71d9644aa472c6c7020a4b15d12754e91abbf"
 
       def install
         bin.install "skillkit"
@@ -17,8 +17,8 @@ class Skillkit < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/lihuu/li-tools/releases/download/v0.4.0/skillkit-linux-amd64.tar.gz"
-      sha256 "b7e1deb84fde37713478db8b4448152a98e7da6a17c43a982fee626178b93997"
+      url "https://github.com/lihuu/li-tools/releases/download/v0.5.0/skillkit-linux-amd64.tar.gz"
+      sha256 "8946ef50e81d6a9947aa9ba72f11ff6b7f9a6623ced3c66ac844953aab2e5549"
 
       def install
         bin.install "skillkit"
@@ -27,6 +27,6 @@ class Skillkit < Formula
   end
 
   test do
-    assert_match "0.4.0", shell_output("#{bin}/skillkit --version")
+    assert_match "0.5.0", shell_output("#{bin}/skillkit --version")
   end
 end
